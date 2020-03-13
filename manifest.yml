@@ -1,8 +1,9 @@
-
+---
 applications:
-- name: pal-trackerlab3
-  path: build/libs/pal-tracker-0.0.1-SNAPSHOT.jar
-  random-route: true
+- name: pal-tracker
+  path: build/libs/pal-tracker.jar
+  routes:
+  - route: pal-tracker-pooja.cfapps.io
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry
+    WELCOME_MESSAGE: Hello from the review environment
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
